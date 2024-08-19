@@ -1,12 +1,42 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #eeeeee;
-  background-color: #393e46;
+  background-color: black;
   line-height: 1.6;
   margin: 0;
   padding: 0;
 }
+#home {
+  background-image: url("/images/ironman.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+#navbar {
+  background-color: #000;
+}
+#header1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #eeeeee; /* White color for the text */
+  margin-bottom: 20px;
+}
 
+#passage1 {
+  font-size: 1.25rem;
+  color: #eeeeee; /* White color for the text */
+  max-width: 700px; /* To limit the width of the paragraph */
+  margin: 0 auto;
+}
+#firstContainer {
+  margin-left: 50px; /* Add a left margin */
+  max-width: 100%;
+}
+#introP {
+  max-width: 50%;
+}
 .navbar {
   background-color: #222831;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

@@ -13,8 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Suraj G Meharwade</a>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,15 +29,16 @@
         </div>
     </nav>
 
-    <header id="home" class="vh-100 d-flex align-items-center text-center text-white">
-        <div class="container">
-            <!-- Profile Picture -->
-            <div class="profile-container text-center">
-                <img src="/images/profile.jpeg" alt="Suraj G Meharwade" class="profile-pic">
+    <header id="home" class="vh-100 d-flex align-items-center text-white">
+        <div id="firstContainer">
+            <!-- Left-aligned content -->
+            <div class="text-left" style="margin-left: 50px;">
+                <h1 style="font-size: 5rem; font-weight: bold;">Suraj G Meharwade</h1>
+                <p id="introP" style="font-size: 1.5rem;">A passionate Computer Science Student, eager to learn,
+                    innovate, and
+                    contribute to the tech community.</p>
+                <a href="#projects" class="btn btn-primary mt-4">See My Work</a>
             </div>
-            <h1 id="header1">Hello, I'm <span class="text-primary">Suraj G Meharwade</span></h1>
-            <p id="passage1">A passionate <span class="text-primary">Computer Science Student</span></p>
-            <a href="#projects" class="btn btn-primary mt-4">See My Work</a>
         </div>
     </header>
 
@@ -47,17 +47,17 @@
             <h2 class="mb-4">Skills</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                    <i class="fas fa-code fa-3x mb-3" style="color: #00adb5;"></i>
                     <h4>Development</h4>
                     <p>Swift, iOS Development, Android Development, Firebase</p>
                 </div>
                 <div class="col-md-4">
-                    <i class="fas fa-database fa-3x text-primary mb-3"></i>
+                    <i class="fas fa-database fa-3x mb-3" style="color: #00adb5;"></i>
                     <h4>Data Science</h4>
                     <p>TensorFlow, Data Analysis, Machine Learning</p>
                 </div>
                 <div class="col-md-4">
-                    <i class="fas fa-laptop-code fa-3x text-primary mb-3"></i>
+                    <i class="fas fa-laptop-code fa-3x mb-3" style="color: #00adb5;"></i>
                     <h4>Web Development</h4>
                     <p>HTML, CSS, JavaScript, Bootstrap</p>
                 </div>
