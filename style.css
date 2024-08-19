@@ -97,51 +97,47 @@ footer {
 .carousel-container {
   position: relative;
   width: 100%;
+  max-width: 600px; /* Adjust the size to your preference */
+  margin: auto;
+  overflow: hidden;
 }
 
-.project-image {
-  width: 100%;
-  height: auto;
-  border-radius: 10px 10px 0 0;
-  object-fit: cover;
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-image {
+  min-width: 100%;
+  transition: opacity 0.5s ease;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #ffffff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 10;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  margin: 20px;
   width: 36px;
   height: 36px;
-  background-color: #007bff; /* Blue background */
+  background-color: #00adb5;
   border: none;
-  border-radius: 50%; /* Make the button round */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #000000; /* Black arrow color */
-  font-size: 24px; /* Adjust arrow size */
-  opacity: 0.7;
+  border-radius: 50%;
+  color: #000;
+  font-size: 24px;
+  transform: translateY(-50%);
   cursor: pointer;
-  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  opacity: 1;
+  background-color: #007bff;
 }
 
 .d-none {
