@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap">
     <link rel="stylesheet" href="style.css">
+    <script src="op.js" defer></script>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
         <div class="container">
             <!-- Profile Picture -->
             <div class="profile-container text-center">
-                <img src="profile.jpeg" alt="Suraj G Meharwade" class="profile-pic">
+                <img src="/images/profile.jpeg" alt="Suraj G Meharwade" class="profile-pic">
             </div>
             <h1 id="header1">Hello, I'm <span class="text-primary">Suraj G Meharwade</span></h1>
             <p id="passage1">A passionate <span class="text-primary">Computer Science Student</span></p>
@@ -70,6 +71,18 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card mb-4">
+                        <div class="carousel-container">
+                            <img src="/images/unilinkHomepage.PNG" class="card-img-top project-image"
+                                alt="Uni Link Image 1">
+                            <img src="/images/reelsPage.PNG" class="card-img-top project-image d-none"
+                                alt="Uni Link Image 2">
+                            <img src="/images/eventPage.PNG" class="card-img-top project-image d-none"
+                                alt="Uni Link Image 3">
+                            <img src="/images/marketPlace.PNG" class="card-img-top project-image d-none"
+                                alt="Uni Link Image 3">
+                            <button class="carousel-control-prev" onclick="prevImage(this)">&#10094;</button>
+                            <button class="carousel-control-next" onclick="nextImage(this)">&#10095;</button>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Uni Link</h5>
                             <p class="card-text">Social networking app for university students.</p>
@@ -78,6 +91,16 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card mb-4">
+                        <div class="carousel-container">
+                            <img src="/images/ssHomePage.jpeg" class="card-img-top project-image"
+                                alt="SkillSeek Image 1">
+                            <img src="/images/ssLogin.jpg" class="card-img-top project-image d-none"
+                                alt="SkillSeek Image 2">
+                            <img src="/images/contactPage.jpeg" class="card-img-top project-image d-none"
+                                alt="SkillSeek Image 3">
+                            <button class="carousel-control-prev" onclick="prevImage(this)">&#10094;</button>
+                            <button class="carousel-control-next" onclick="nextImage(this)">&#10095;</button>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">SkillSeek</h5>
                             <p class="card-text">Platform for skill development.</p>
@@ -101,6 +124,7 @@
     <section id="contact" class="container text-center">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:surajgmehar@gmail.com">surajgmehar@gmail.com</a></p>
+        <p>Github: <a href="https://github.com/Suru-web">Suru-web</a></p>
         <p>LinkedIn: <a
                 href="https://www.linkedin.com/in/suraj-g-meharwade-408b492a8/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
                 Suraj G Meharwade</a></p>
