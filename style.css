@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 #home {
   background-image: url("/images/ironman.jpg");
   background-size: cover;
@@ -13,6 +14,54 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   color: white;
+  display: flex;
+  align-items: center;
+}
+
+#firstContainer {
+  margin-left: 50px; /* Left margin for desktop */
+  max-width: 100%;
+  padding: 20px;
+}
+
+#firstContainer .text-left {
+  margin-left: 0; /* Remove margin for mobile */
+}
+
+h1 {
+  font-size: 4vw; /* Responsive font size based on viewport width */
+  font-weight: bold;
+  color: #eeeeee;
+  margin-bottom: 20px;
+}
+
+#introP {
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 6vw; /* Larger text on smaller screens */
+  }
+
+  #firstContainer {
+    margin-left: 20px; /* Reduce margin on mobile */
+    padding: 10px;
+  }
+
+  #introP {
+    font-size: 1.2rem;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+  }
 }
 #navbar {
   background-color: #000;
@@ -29,13 +78,6 @@ body {
   color: #eeeeee; /* White color for the text */
   max-width: 700px; /* To limit the width of the paragraph */
   margin: 0 auto;
-}
-#firstContainer {
-  margin-left: 50px; /* Add a left margin */
-  max-width: 100%;
-}
-#introP {
-  max-width: 50%;
 }
 .navbar {
   background-color: #222831;
