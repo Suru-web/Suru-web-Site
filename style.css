@@ -47,7 +47,7 @@ h1 {
   }
 
   #firstContainer {
-    margin-left: 20px; /* Reduce margin on mobile */
+    margin-left: 0px; /* Reduce margin on mobile */
     padding: 10px;
   }
 
