@@ -43,7 +43,7 @@ h1 {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 6vw; /* Larger text on smaller screens */
+    font-size: 2vw; /* Larger text on smaller screens */
   }
 
   #firstContainer {
@@ -52,7 +52,7 @@ h1 {
   }
 
   #introP {
-    font-size: 1.2rem;
+    font-size: 0.5vw;
     max-width: 100%;
     text-align: left;
   }
